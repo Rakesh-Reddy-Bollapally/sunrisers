@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            background: repeating-linear-gradient(orange,white,orange,black);
+        }
+       
+        
+        
+        #mainheading{
+            
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 60px;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(to right,orange,orange,rgb(255, 255, 255),orange,black);
+        }
+        
+        .container {
+            display: grid;
+            height: auto;
+            width: 4fr;
+            height: 7fr;
+            grid-template-areas: 'heading1 heading1 heading1 heading1'
+                'image1 image2 image3 image4'
+                'image5 . . .'
+                'heading2 heading2 heading2 heading2'
+                'image6 image7 image8 image9'
+                'image10 image11 . .'
+                'heading3 heading3 heading3 heading3'
+                'image12 image13 image14 image15'
+                'image16 image17 . .'
+                'heading4 heading4 heading4 heading4'
+                'image18 image19 . .';
+            gap: 10px;
+        }
+
+        .image1 {
+            grid-area: image1;
+        }
+
+        .image2 {
+            grid-area: image2;
+        }
+
+        .image3 {
+            grid-area: image3;
+        }
+
+        .image4 {
+            grid-area: image4;
+        }
+
+        .image5 {
+            grid-area: image5;
+        }
+
+        .image6 {
+            grid-area: image6;
+        }
+
+        .image7 {
+            grid-area: image7;
+        }
+
+        .image8 {
+            grid-area: image8;
+        }
+
+        .image9 {
+            grid-area: image9;
+        }
+
+        .image10 {
+            grid-area: image10;
+        }
+
+        .image11 {
+            grid-area: image11;
+        }
+
+        .image12 {
+            grid-area: image12;
+        }
+
+        .image13 {
+            grid-area: image13;
+        }
+
+        .image14 {
+            grid-area: image14;
+        }
+
+        .image15 {
+            grid-area: image15;
+        }
+
+        .image16 {
+            grid-area: image16;
+        }
+
+        .image17 {
+            grid-area: image17;
+        }
+
+        .image18 {
+            grid-area: image18;
+        }
+
+        .image19 {
+            grid-area: image19;
+        }
+
+        .heading1 {
+            grid-area: heading1;
+        }
+
+        .heading2 {
+            grid-area: heading2;
+        }
+
+        .heading3 {
+            grid-area: heading3;
+        }
+
+        .heading4 {
+            grid-area: heading4;
+        }
+
+        .container img {
+            border-radius: 15px;
+            height: 350px;
+            width: 350px;
+            opacity: 0.7;
+
+        }
+        .container img:hover{
+            opacity: 1;
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+
+        .container .inner {
+            border: 2px solid black;
+            height: 400px;
+            width: 350px;
+            border-radius: 15px;
+            padding: 5px;
+            background: linear-gradient(rgb(249, 134, 2),rgb(0, 0, 0),rgb(249, 134, 2));
+
+        }
+
+        .inner p {
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            bottom: 15px;
+        }
+        .heading1>h1{
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 50px;
+        }
+        .heading2>h1{
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 50px;
+        }
+        .heading3>h1{
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 50px;
+        }
+        .heading4>h1{
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 50px;
+        }
+        .logo img{
+            opacity: 0.8;
+            height: 130px;
+            width: 180px;
+            display:flex;
+            position: absolute;
+            left:1300px
+        }
+        .logo img:hover{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        audio{
+            margin-top: 10px;
+            background-color: orangered;
+        }
+        button{
+            font-family: "Winky Rough", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 15px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(orange,orange,orange,orange,orange);
+        }
+        
+        
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/800px-Sunrisers_Hyderabad_Logo.svg.png" alt="">
+        <h1 id="mainheading"> SUNRISERS HYDERABAD SQAD 2025</h1>
+        <button  onclick="document.getElementById('myAudio').play()">Click to Play SRH Anthem</button>
+        <audio id="myAudio" src="./anthem.mp3"></audio>
+        
+    </div>
+    
+    <div class="container">
+        <div class="heading1">
+            <h1>BATTERS</h1>
+        </div>
+
+        <div class="image1">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1001.png" alt="">
+                <p>Atharva Taide</p>
+            </div>
+        </div>
+
+        <div class="image2">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/974.png" height="300" width="300" alt="">
+                <p>Abhinav Manohar</p>
+            </div>
+        </div>
+
+        <div class="image3">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/3576.png" height="300" width="300" alt="">
+                <p>Aniket Verma</p>
+            </div>
+        </div>
+
+        <div class="image4">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/599.png" height="300" width="300" alt="">
+                <p>Sachin Baby</p>
+            </div>
+        </div>
+
+        <div class="image5">
+            <div class="inner">
+                <img src="./head.png" height="300" width="300" alt="">
+                <p>Travis Head</p>
+            </div>
+        </div>
+
+        <div class="heading2">
+            <h1>BOWLERS</h1>
+        </div>
+
+        <div class="image6">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/24.png" height="300" width="300" alt="">
+                <p>Adam Zampa</p>
+            </div>
+        </div>
+
+        <div class="image7">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/3339.png" height="300" width="300" alt="">
+                <p>Eshan Malinga</p>
+            </div>
+        </div>
+
+        <div class="image8">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/180.png" height="300" width="300" alt="">
+                <p>Jaydev Unadkat</p>
+            </div>
+        </div>
+
+        <div class="image9">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/47.png" height="300" width="300" alt="">
+                <p>Mohammad Shami</p>
+            </div>
+        </div>
+
+        <div class="image10">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/171.png" height="300" width="300" alt="">
+                <p>Rahul Chahar</p>
+            </div>
+        </div>
+
+        <div class="image11">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/622.png" height="300" width="300" alt="">
+                <p>Simarjeet Singh</p>
+            </div>
+        </div>
+
+        <div class="heading3">
+            <h1>ALL ROUNDERS</h1>
+        </div>
+
+        <div class="image12">
+            <div class="inner">
+                <img src="https://aboutthepeople.in/wp-content/uploads/2024/04/GKd7GnpaYAEvt3N.jpg" height="300" width="300" alt="">
+                <p>Abhishek Sharma</p>
+            </div>
+        </div>
+
+        <div class="image13">
+            <div class="inner">
+                <img src="./harshal.png" height="300" width="300" alt="">
+                <p>Harshal Patel</p>
+            </div>
+        </div>
+
+        <div class="image14">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/627.png" height="300" width="300" alt="">
+                <p>Kamindu Mendis</p>
+            </div>
+        </div>
+
+        <div class="image15">
+            <div class="inner">
+                <img src="./nkr.png" height="300" width="300" alt="">
+                <p>Nitish Kumar Reddy</p>
+            </div>
+        </div>
+
+        <div class="image16">
+            <div class="inner">
+                <img src="./pat.png" height="300" width="300" alt="">
+                <p>Pat Cummins - CAPTAIN</p>
+            </div>
+        </div>
+
+        <div class="image17">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/630.png" height="300" width="300" alt="">
+                <p>Wiaan Mulder</p>
+            </div>
+        </div>
+
+        <div class="heading4">
+            <h1>WICKET-KEEPERS</h1>
+        </div>
+
+        <div class="image18">
+            <div class="inner">
+                <img src="./klassen.png" height="300" width="300" alt="">
+                <p>Heinrich Klaasen</p>
+            </div>
+        </div>
+
+        <div class="image19">
+            <div class="inner">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/164.png" height="300" width="300" alt="">
+                <p>Ishan Kishan</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
