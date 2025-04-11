@@ -229,7 +229,7 @@ button:hover{
 .footer{
     
     height:60px;
-    width: 100%;
+    width: auto;
     background-color: black;
     margin-left: 0;
     padding: 0;
