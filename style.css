@@ -1,0 +1,243 @@
+body{
+    background: repeating-linear-gradient(orange,white,orange);
+    margin:0;
+}
+
+
+
+#mainheading{
+    
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 60px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 4px 3px orangered;
+    background: linear-gradient(to right,orange,orange,rgb(255, 255, 255),orange,orange);
+}
+
+.container {
+   
+    padding: 10px;
+    display: grid;
+    height: auto;
+    width: 4fr;
+    height: 7fr;
+    grid-template-areas: 'heading1 heading1 heading1 heading1'
+        'image1 image2 image3 image4'
+        'image5 . . .'
+        'heading2 heading2 heading2 heading2'
+        'image6 image7 image8 image9'
+        'image10 image11 new .'
+        'heading3 heading3 heading3 heading3'
+        'image12 image13 image14 image15'
+        'image16 image17 . .'
+        'heading4 heading4 heading4 heading4'
+        'image18 image19 . .';
+    gap: 15px;
+    
+}
+
+.image1 {
+    grid-area: image1;
+
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.image5 {
+    grid-area: image5;
+}
+
+.image6 {
+    grid-area: image6;
+}
+
+.image7 {
+    grid-area: image7;
+}
+
+.image8 {
+    grid-area: image8;
+}
+
+.image9 {
+    grid-area: image9;
+}
+
+.image10 {
+    grid-area: image10;
+}
+
+.image11 {
+    grid-area: image11;
+}
+
+.image12 {
+    grid-area: image12;
+}
+
+.image13 {
+    grid-area: image13;
+}
+
+.image14 {
+    grid-area: image14;
+}
+
+.image15 {
+    grid-area: image15;
+}
+
+.image16 {
+    grid-area: image16;
+}
+
+.image17 {
+    grid-area: image17;
+}
+
+.image18 {
+    grid-area: image18;
+}
+
+.image19 {
+    grid-area: image19;
+}
+.new{
+    grid-area: new;
+}
+
+.heading1 {
+    grid-area: heading1;
+}
+
+.heading2 {
+    grid-area: heading2;
+}
+
+.heading3 {
+    grid-area: heading3;
+}
+
+.heading4 {
+    grid-area: heading4;
+}
+
+.container img {
+    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+    opacity: 0.7;
+
+}
+.container img:hover{
+    opacity: 1;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.container .inner {
+    border: 2px solid black;
+    height: 400px;
+    width: 350px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 7px 6px;
+    background: linear-gradient(rgb(249, 134, 2),rgb(0, 0, 0),rgb(249, 134, 2));
+
+}
+
+.inner p {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+}
+.heading1>h1{
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+    
+}
+.heading2>h1{
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}
+.heading3>h1{
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}
+.heading4>h1{
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}
+.logo img{
+    opacity: 0.8;
+    height: 130px;
+    width: 180px;
+    display:flex;
+    position: absolute;
+    left:1300px
+}
+.logo img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+audio{
+    margin-top: 10px;
+    background-color: orangered;
+}
+button{
+    left: 20px;
+    position: relative;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(orange,orange,orange,orange,orange);
+    box-shadow: 3px 3px;
+}
+button:hover{
+    rotate: 45deg;
+}
+.footer{
+    
+    height:60px;
+    width: 100%;
+    background-color: black;
+    margin-left: 0;
+    padding: 0;
+}
+.footer h1{
+    color: orangered;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 2px 1px rgb(232, 231, 230);
+
+}
